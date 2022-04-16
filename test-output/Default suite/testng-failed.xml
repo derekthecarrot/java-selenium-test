@@ -5,7 +5,7 @@
     <classes>
       <class name="firsttestngpackage.TestNGfile">
         <methods>
-          <include name="verifyHomepageTitle"/>
+          <include name="expediaAutoBook"/>
         </methods>
       </class> <!-- firsttestngpackage.TestNGfile -->
     </classes>
