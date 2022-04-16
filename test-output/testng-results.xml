@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-16T08:46:20 EDT" name="Default suite" finished-at="2022-04-16T08:46:22 EDT" duration-ms="1522">
+    <groups>
+    </groups>
+    <test started-at="2022-04-16T08:46:20 EDT" name="Default test" finished-at="2022-04-16T08:46:22 EDT" duration-ms="1522">
+      <class name="firsttestngpackage.TestNGfile">
+        <test-method signature="verifyHomepageTitle()[pri:0, instance:firsttestngpackage.TestNGfile@6d2a209c]" started-at="2022-04-16T08:46:20 EDT" name="verifyHomepageTitle" finished-at="2022-04-16T08:46:22 EDT" duration-ms="1501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+      </class> <!-- firsttestngpackage.TestNGfile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

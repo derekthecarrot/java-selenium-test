@@ -16,6 +16,9 @@ public class launchbrowser {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",".\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		driver.get("https://www.google.com");
+		System.out.println("hello");
 
 
 	}
