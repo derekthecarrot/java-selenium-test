@@ -27,26 +27,55 @@ public class TestNGfile {
 //	    System.out.println("Page title is : " + driver.getTitle());
 //  }
 //}
-	@Test
-	public void expediaAutoBook() {
+//	@Test
+//  Commenting out due to issues with website thinking I'm a robot.
+
+//	public void expediaAutoBook() {
+//	
+//		
+//		System.setProperty("webdriver.chrome.driver",".\\driver\\chromedriver.exe");
+//		WebDriver driver = new ChromeDriver();
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+//		
+//		driver.get("https://www.expedia.com/");
+//		WebElement webPageLoad = driver.findElement(By.xpath("//*[@id='wizardMainRegionV2']/div/div/div/div/ul/li[2]/a"));
+//		
+//		webPageLoad.click();
+//		
+//		WebElement firstResult = driver.findElement(By.xpath("//*[@id='wizard-flight-tab-roundtrip']/div[2]/div[1]/div/div[1]/div/div/div/div[1]/div"));
+//        firstResult.click();
+//        
+//        WebElement searchBarFrom = driver.findElement(By.xpath("//*[@id='location-field-leg1-origin']"));
+//        
+//        searchBarFrom.sendKeys("RDU");
+//	}
+//	
+
+		@Test
+		public void shoppingAutomation() {
 	
 		
 		System.setProperty("webdriver.chrome.driver",".\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		Actions action = new Actions(driver);
 		
 		
-		driver.get("https://www.expedia.com/");
-		WebElement webPageLoad = driver.findElement(By.xpath("//*[@id='wizardMainRegionV2']/div/div/div/div/ul/li[2]/a"));
+		driver.get("http://automationpractice.com/");
 		
-		webPageLoad.click();
+		//Hover over "Women" categorization
+		WebElement webPageWomen = driver.findElement(By.xpath("//*[@id='block_top_menu']/ul/li[1]/a"));
+		action.moveToElement(webPageWomen);
 
+		//After hovering over "Women" category, hover over T-shirts then click
+		WebElement tshirtResult = driver.findElement(By.xpath("//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a"));
+        action.moveToElement(tshirtResult);
+        action.click().build().perform();
 		
-		WebElement firstResult = driver.findElement(By.xpath("//*[@id='wizard-flight-tab-roundtrip']/div[2]/div[1]/div/div[1]/div/div/div/div[1]/div"));
-        firstResult.click();
-        
-        WebElement searchBarFrom = driver.findElement(By.xpath("//*[@id='location-field-leg1-origin']"));
-        
-        searchBarFrom.sendKeys("RDU");
+		//Hover over image for add to cart
+		WebElement hoverToAdd = driver.findElement(By.xpath("//*[@id='center_column']/ul/li/div"));
+		
+		action.moveToElement(hoverToAdd);
+		
 	}
 }
