@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-16T21:23:54 EDT" name="Default suite" finished-at="2022-04-16T21:23:58 EDT" duration-ms="3403">
+  <suite started-at="2022-04-16T21:30:29 EDT" name="Default suite" finished-at="2022-04-16T21:30:33 EDT" duration-ms="4207">
     <groups>
     </groups>
-    <test started-at="2022-04-16T21:23:54 EDT" name="Default test" finished-at="2022-04-16T21:23:58 EDT" duration-ms="3403">
+    <test started-at="2022-04-16T21:30:29 EDT" name="Default test" finished-at="2022-04-16T21:30:33 EDT" duration-ms="4207">
       <class name="firsttestngpackage.TestNGfile">
-        <test-method signature="shoppingAutomation()[pri:0, instance:firsttestngpackage.TestNGfile@6d2a209c]" started-at="2022-04-16T21:23:54 EDT" name="shoppingAutomation" finished-at="2022-04-16T21:23:58 EDT" duration-ms="3384" status="PASS">
+        <test-method signature="shoppingAutomation()[pri:0, instance:firsttestngpackage.TestNGfile@6d2a209c]" started-at="2022-04-16T21:30:29 EDT" name="shoppingAutomation" finished-at="2022-04-16T21:30:33 EDT" duration-ms="4186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shoppingAutomation -->

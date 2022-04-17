@@ -72,10 +72,12 @@ public class TestNGfile {
         action.moveToElement(tshirtResult);
         action.click().build().perform();
 		
-		//Hover over image for add to cart
-		WebElement hoverToAdd = driver.findElement(By.xpath("//*[@id='center_column']/ul/li/div"));
+		//Hover over image, mouse over add to cart button, then add to cart.
+		WebElement hoverToAdd = driver.findElement(By.xpath("//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img"));
+		WebElement addToCart = driver.findElement(By.xpath("//*[@id='center_column']/ul/li/div/div[2]/div[2]/a[1]/span"));
 		
 		action.moveToElement(hoverToAdd);
-		
+		action.moveToElement(addToCart);
+		action.click().build().perform();
 	}
 }
